@@ -1,0 +1,41 @@
+{
+	"name": "tpî.docpad",
+	"version": "1.1.1",
+	"description": "Website of Thomas Piart. Made with DocPad.",
+	"homepage": "https://tpî.eu",
+	"keywords": [
+		"thomas piart",
+		"piart"
+	],
+	"author": "Thomas Piart <me@tpî.eu> (http://tpî.eu)",
+	"maintainers": [
+		"Thomas Piart <me@tpî.eu> (http://tpî.eu)"
+	],
+	"contributors": [
+		"Thomas Piart <me@tpî.eu> (http://tpî.eu)"
+	],
+	"bugs": {
+		"url": "https://github.com/tomap/tomap.docpad/issues"
+	},
+	"repository" : {
+		"type" : "git",
+		"url" : "http://github.com/tomap/tomap.docpad.git"
+	},
+	"engines": {
+		"node": "0.8.x",
+		"npm": "1.1.x"
+	},
+	"dependencies": {
+		"docpad": "6.x",
+		"docpad-plugin-cleanurls": "2.x",
+		"docpad-plugin-coffeekup": "2.x",
+		"docpad-plugin-coffeescript": "2.x",
+		"docpad-plugin-eco": "2.x",
+		"docpad-plugin-feedr": "2.x",
+		"docpad-plugin-marked": "2.x",
+		"docpad-plugin-partials": "2.x",
+		"docpad-plugin-stylus": "2.x",
+		"docpad-plugin-text": "2.x"
+	},
+	"main": "node_modules/docpad/bin/docpad-server"
+}
