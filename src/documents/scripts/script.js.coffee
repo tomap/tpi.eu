@@ -71,7 +71,8 @@ $ ->
 	openOutboundLink = ({url,action}) ->
 		# https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide
 		hostname = url.replace(/^.+?\/+([^\/]+).*$/,'$1')
-		if(window._gaq)_gaq.push(['_trackEvent', "Outbound Links", hostname, url, 0, true])
+		if window._gaq
+			_gaq.push(['_trackEvent', "Outbound Links", hostname, url, 0, true])
 		openLink({url,action})
 		return
 
@@ -139,5 +140,6 @@ $ ->
 	# Handle more to read areas
 	$('.more-to-read').hide()
 	$('.read-more').click ->
-		if(window._gaq)_gaq.push(['_trackEvent', "Read More", document.title, document.location.href, 0, true])
+		if window._gaq
+			_gaq.push(['_trackEvent', "Read More", document.title, document.location.href, 0, true])
 		$(this).hide().next('.more-to-read').show()
