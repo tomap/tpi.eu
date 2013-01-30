@@ -37,13 +37,16 @@ html lang: 'en', ->
 		link rel: 'stylesheet', href: '/styles/style.css', media: 'screen, projection'
 		link rel: 'stylesheet', href: '/styles/print.css', media: 'print'
 		link rel: 'stylesheet', href: '/vendor/fancybox-2.1.4/jquery.fancybox.css', media: 'screen, projection'
+
+		link rel: 'shortcut icon', href: '/favicon.ico'
 	body ->
 		# Heading
 		header '.heading', ->
 			a href:'/', title:'Return home', ->
 				h1 -> @site.text.heading
 				#span '.heading-avatar', ->
-			h2 -> @site.text.subheading
+			if @site.text.subheading
+				h2 -> @site.text.subheading
 
 		# Pages
 		nav '.pages', ->

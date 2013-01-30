@@ -58,22 +58,21 @@ module.exports =
 
 			text:
 				heading: "Thomas Piart"
-				subheading: '''
-					<t render="html.coffee">
-						link = @getPreparedLink.bind(@)
-						text """
-							Aficionado of ...
-							"""
-							# #{link 'javascript'}, #{link 'nodejs'}, #{link 'opensource'} and #{link 'html5'}.
-					</t>
-					'''
+				#subheading: '''
+				#	<t render="html.coffee">
+					# 	link = @getPreparedLink.bind(@)
+					# 	text """
+					# 		Aficionado of ...
+					# 		"""
+					# 		# #{link 'javascript'}, #{link 'nodejs'}, #{link 'opensource'} and #{link 'html5'}.
+					# </t>
+					# '''
 				about: '''
 					<t render="html.coffee">
 						link = @getPreparedLink.bind(@)
 						text """
-							This website was created with DocPad.
+							This website was created with #{link 'bevry'}’s #{link 'docpad'} and is #{link 'source'}
 							"""
-							 #{link 'bevry'}’s #{link 'docpad'} and is #{link 'source'}
 					</t>
 					'''
 				copyright: '''
@@ -88,8 +87,8 @@ module.exports =
 			analytics:
 				google: 'UA-44xxx'
 
-			#services:
-			#	disqus: 'xxxxxxx'
+			services:
+				disqus: 'tpii'
 
 			social:
 				"""
@@ -99,7 +98,7 @@ module.exports =
 				""".trim().split('\n')
 
 			scripts: """
-				/vendor/jquery-1.9.0.js
+				//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js
 				/vendor/fancybox-2.1.4/jquery.fancybox.js
 				/scripts/script.js
 				""".trim().split('\n')
@@ -155,6 +154,18 @@ module.exports =
 					text: 'Email'
 					url: 'mailto:me@tpî.eu'
 					title: 'Email me'
+				bevry:
+					text: 'Bevry'
+					url: 'http://bevry.me'
+					title: 'Visit Website'
+				source:
+					text: 'open-source'
+					url: 'https://github.com/tomap/tpi'
+					title: 'View Website Source'
+				docpad:
+					text: 'DocPad'
+					url: 'http://docpad.org'
+					title: 'Visit Website'
 
 		# Link Helper
 		getPreparedLink: (name) ->
@@ -231,6 +242,11 @@ module.exports =
 			# docpadServer.get /^\/feeds?(?:\/(.*))?$/, (req, res) ->
 			# 	res.redirect 301, "http://feeds.feedburner.com/tomap"
 
+		renderAfter: (opts) ->
+
+			console.log "after run"
+
+			#console.log(opts)
 
 	# =================================
 	# Plugin Configuration

@@ -66,5 +66,5 @@ footer '.page-footer', ->
 			}
 
 	# Disqus
-	#section '.page-comments', ->
-	#	text @partial('services/disqus', @)
+	section '.page-comments', ->
+		text @partial('services/disqus', @)
