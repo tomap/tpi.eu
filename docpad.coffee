@@ -98,7 +98,7 @@ module.exports =
 				""".trim().split('\n')
 
 			scripts: """
-				//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js
+				//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 				/vendor/fancybox-2.1.4/jquery.fancybox.js
 				/scripts/script.js
 				""".trim().split('\n')
@@ -241,12 +241,6 @@ module.exports =
 			# # Feeds
 			# docpadServer.get /^\/feeds?(?:\/(.*))?$/, (req, res) ->
 			# 	res.redirect 301, "http://feeds.feedburner.com/tomap"
-
-		renderAfter: (opts) ->
-
-			console.log "after run"
-
-			#console.log(opts)
 
 	# =================================
 	# Plugin Configuration

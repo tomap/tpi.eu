@@ -77,7 +77,7 @@ $ ->
 		return
 
 	# Outbound Link Tracking
-	$body.on 'click', 'a[href]:external', (event) ->
+	$body.on 'click', 'a[href]:external:not(.fancybox)', (event) ->
 		# Prepare
 		$this = $(this)
 		url = $this.attr('href')
@@ -96,7 +96,10 @@ $ ->
 		# Done
 		return
 
-
+	# ---------------------------------
+	# Images
+	$('.fancybox').fancybox().bind (event) ->
+		event.stopPropagation()
 	# ---------------------------------
 	# Misc
 
