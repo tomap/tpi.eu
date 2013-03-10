@@ -205,13 +205,6 @@ module.exports =
 			# ---------------------------------
 			# Server Configuration
 
-			# Redirect Middleware
-			#docpadServer.use (req,res,next) ->
-			#	if req.headers.host in ['www.tomap.com','lupton.cc','www.lupton.cc','tomap.no.de','tomap.herokuapp.com']
-			#		res.redirect 301, 'http://tpî.eu'+req.url
-			#	else
-			#		next()
-
 			# ---------------------------------
 			# Server Extensions
 
