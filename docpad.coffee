@@ -1,6 +1,5 @@
-# =================================
-# Misc Configuration
-
+# DocPad Configuration File
+# http://docpad.org/docs/config
 envConfig = process.env
 githubAuthString = "client_id=#{envConfig.tomap_GITHUB_CLIENT_ID}&client_secret=#{envConfig.tomap_GITHUB_CLIENT_SECRET}"
 getRankInUsers = (users) ->
@@ -28,22 +27,13 @@ getRankInUsers = (users) ->
 	return rank
 
 
-# =================================
-# DocPad Configuration
-
-module.exports =
-	regenerateEvery: 1000*60*60  # hour
-	
-	port: 8080
-	
-	# =================================
-	# Template Data
-	# These are variables that will be accessible via our templates
-	# To access one of these within our templates, refer to the FAQ: https://github.com/bevry/docpad/wiki/FAQ
+# Define the DocPad Configuration
+docpadConfig = 
 
 	templateData:
 		# Site Data
 		site:
+			version: require('./package.json').version
 			domain: "tpî.eu"
 			url: "http://tpî.eu"
 			title: "Thomas Piart"
@@ -96,10 +86,14 @@ module.exports =
 				github
 				twitter
 				""".trim().split('\n')
-
+			
+			styles: """
+				//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css
+				""".trim().split('\n')
+			
 			scripts: """
-				//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
-				/vendor/fancybox-2.1.4/jquery.fancybox.js
+				//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
+				//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js
 				/scripts/script.js
 				""".trim().split('\n')
 
@@ -160,13 +154,13 @@ module.exports =
 					title: 'Visit Website'
 				source:
 					text: 'open-source'
-					url: 'https://github.com/tomap/tpi'
+					url: 'https://github.com/tomap/tpi.eu'
 					title: 'View Website Source'
 				docpad:
 					text: 'DocPad'
 					url: 'http://docpad.org'
 					title: 'Visit Website'
-
+		
 		# Link Helper
 		getPreparedLink: (name) ->
 			#console.log(name)
@@ -248,3 +242,7 @@ module.exports =
 				#flickr:
 				#	url: "http://api.flickr.com/services/feeds/photos_public.gne?id=35776898@N00&lang=en-us&format=json"
 
+
+
+# Export the DocPad Configuration
+module.exports = docpadConfig

@@ -5,7 +5,7 @@ h2 '.document', 'typeof':'soic:post', about:@document.url, ->
 		strong '.document-title', property:'dc:title', ->
 			@document.title
 		small '.document-date', property:'dc:date', ->
-			@document.date.toShortDateString()
+			@document.date.toDateString()
 if @document.description
 	p '.document-description', property:'dc:description', ->
 		@document.description

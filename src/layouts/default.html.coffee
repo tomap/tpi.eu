@@ -33,10 +33,10 @@ html lang: 'en', ->
 		meta name: 'keywords', content: @getPreparedKeywords()
 
 		# Styles
-		text  @getBlock('styles').toHTML()
+		text  @getBlock('styles').add(@site.styles).toHTML()
 		link rel: 'stylesheet', href: '/styles/style.css', media: 'screen, projection'
 		link rel: 'stylesheet', href: '/styles/print.css', media: 'print'
-		link rel: 'stylesheet', href: '/vendor/fancybox-2.1.4/jquery.fancybox.css', media: 'screen, projection'
+		link rel: 'stylesheet', href: '//cdnjs.cloudflare.com/ajax/libs/fancybox/jquery.fancybox.css', media: 'screen, projection'
 
 		link rel: 'shortcut icon', href: '/favicon.ico'
 	body ->
@@ -62,7 +62,7 @@ html lang: 'en', ->
 		article '.page',
 			'typeof': 'sioc:page'
 			about: @document.url
-			datetime: @document.date.toISODateString()
+			datetime: @document.date.toISOString()
 			-> @content
 
 		# Footing
