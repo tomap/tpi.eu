@@ -2,9 +2,8 @@
 title: IDN and browser support
 layout: post
 tags: [idn,browser,support]
-date: '2013-03-11'
+date: '2014-01-5'
 flickrImagesDirectory: idn
-ignored: true
 ---
 <P>
 
@@ -38,3 +37,7 @@ On Mac, <b>.eu</b> extension is not supposed to display IDN, so it's not part of
 <h2>Chrome on Android</h2>
 <p>On Android, with Chrome: it does not work and shows punycode:</p>
 <%- @getDocument().getFlickrImage('chrome android.png')  %>
+
+<p>
+	Note: I wrote this article one year ago (in March 2013) and never took time to publish it :(
+</p>

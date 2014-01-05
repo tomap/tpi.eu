@@ -20,3 +20,5 @@ env.coffee
 main.sublime-workspace
 
 .DS_Store
+
+.docpad.db

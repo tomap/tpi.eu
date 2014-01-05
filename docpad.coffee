@@ -185,7 +185,7 @@ docpadConfig =
 			@getCollection('documents').findAllLive({pageOrder:$exists:true},[pageOrder:1])
 
 		posts: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath:'blog'},[date:-1])
+			@getCollection('documents').findAllLive({relativeOutDirPath:'blog',ignored:false},[date:-1])
 
 
 	# =================================
