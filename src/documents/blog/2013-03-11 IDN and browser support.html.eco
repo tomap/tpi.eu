@@ -10,7 +10,7 @@ flickrImagesDirectory: idn
 	This post is about IDN and browser support.
 </P>
 <P>
-First of all, http does not support unicode :). To <i>do</i> unicode, they use a <bp>punycode<b> to convert any domain name into it's ascii equivalent: for example, my domain <b>tpî.eu</b> is translated to <b>http://xn--tp-rja.eu/</b>.
+First of all, http does not support unicode :). To <i>do</i> unicode, they use a <bp>punycode</b> to convert any domain name into it's ascii equivalent: for example, my domain <b>tpî.eu</b> is translated to <b>http://xn--tp-rja.eu/</b>.
 </P>
 I bought this IDN domain (tpî.eu), found this idea very clever until I found out that browser support wasn't so good. It goes from no support to little issues to perfect.
 </P>
