@@ -75,7 +75,7 @@ docpadConfig =
 					'''
 
 			analytics:
-				google: 'UA-44xxx'
+				google: 'UA-47057039-1'
 
 			services:
 				disqus: 'tpii'

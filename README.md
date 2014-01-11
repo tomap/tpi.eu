@@ -1,4 +1,16 @@
-# Thomap Piart's Website, built with [DocPad](http://docpad.org)
+# Thomas Piart's Website, built with [DocPad](http://docpad.org)
+
+## How To
+
+To launch this website:
+- get sources
+- run npm intall
+- run npm -g install docpad
+- run docpad run -e static (to run locally)
+- run docpad run -e static,production
+
+To update dependencies & co:
+- run docpad upgrade && docpad update
 
 ## License
 
