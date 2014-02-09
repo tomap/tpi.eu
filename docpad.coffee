@@ -61,7 +61,7 @@ docpadConfig =
 					<t render="html.coffee">
 						link = @getPreparedLink.bind(@)
 						text """
-							This website was created with #{link 'bevry'}’s #{link 'docpad'} and is #{link 'source'}
+							This website was created with #{link 'docpad'} and is #{link 'source'}
 							"""
 					</t>
 					'''
@@ -88,11 +88,12 @@ docpadConfig =
 				""".trim().split('\n')
 			
 			styles: """
-				//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css
+				//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css
+				//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css
 				""".trim().split('\n')
 			
 			scripts: """
-				//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
+				//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js
 				//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js
 				/scripts/script.js
 				""".trim().split('\n')
@@ -148,10 +149,6 @@ docpadConfig =
 					text: 'Email'
 					url: 'mailto:me@tpî.eu'
 					title: 'Email me'
-				bevry:
-					text: 'Bevry'
-					url: 'http://bevry.me'
-					title: 'Visit Website'
 				source:
 					text: 'open-source'
 					url: 'https://github.com/tomap/tpi.eu'

@@ -35,9 +35,7 @@ html lang: 'en', ->
 		# Styles
 		text  @getBlock('styles').add(@site.styles).toHTML()
 		link rel: 'stylesheet', href: '/styles/style.css', media: 'screen, projection'
-		link rel: 'stylesheet', href: '/styles/print.css', media: 'print'
-		link rel: 'stylesheet', href: '//cdnjs.cloudflare.com/ajax/libs/fancybox/jquery.fancybox.css', media: 'screen, projection'
-
+		
 		link rel: 'shortcut icon', href: '/favicon.ico'
 	body ->
 		# Heading
