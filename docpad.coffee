@@ -43,20 +43,11 @@ docpadConfig =
 				Website of Thomas Piart. Made with DocPad.
 				"""
 			keywords: """
-				tpiart, Thomas Piart, piartt, piart
+				tpiart, Thomas Piart, piartt, piart, tpi, tpî
 				"""
 
 			text:
 				heading: "Thomas Piart"
-				#subheading: '''
-				#	<t render="html.coffee">
-					# 	link = @getPreparedLink.bind(@)
-					# 	text """
-					# 		Aficionado of ...
-					# 		"""
-					# 		# #{link 'javascript'}, #{link 'nodejs'}, #{link 'opensource'} and #{link 'html5'}.
-					# </t>
-					# '''
 				about: '''
 					<t render="html.coffee">
 						link = @getPreparedLink.bind(@)
@@ -139,7 +130,7 @@ docpadConfig =
 					title: 'View Website Source'
 				cclicense:
 					text: 'Creative Commons Attribution License'
-					url: 'http://creativecommons.org/licenses/by/3.0/'
+					url: 'http://creativecommons.org/licenses/by/4.0/'
 					title: 'Visit Website'
 				mitlicense:
 					text: 'MIT License'

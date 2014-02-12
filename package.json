@@ -1,6 +1,6 @@
 {
   "name": "tpi.docpad",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Website of Thomas Piart. Made with DocPad.",
   "homepage": "http://tpî.eu",
   "keywords": [
@@ -42,15 +42,15 @@
   },
   "devDependencies": {
     "docpad-plugin-eco": "~2.0.3",
-    "docpad-plugin-coffeescript": "~2.2.3",
+    "docpad-plugin-coffeescript": "~2.3.0",
     "docpad-plugin-coffeekup": "~2.2.0",
-    "docpad-plugin-marked": "~2.1.2",
+    "docpad-plugin-marked": "~2.2.0",
     "docpad-plugin-partials": "~2.8.1",
     "docpad-plugin-stylus": "~2.5.0",
-    "docpad-plugin-feedr": "~2.6.0",
+    "docpad-plugin-feedr": "~2.7.0",
     "docpad-plugin-cleanurls": "~2.6.1",
     "docpad-plugin-text": "~2.3.2",
     "docpad-plugin-flickrimages": ">=2",
-    "docpad": "~6.60.2"
+    "docpad": "~6.63.3"
   }
 }
