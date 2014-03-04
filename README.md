@@ -12,6 +12,8 @@ To launch this website:
 - run docpad run -e static (to run locally)
 - run docpad run -e static,production
 
+Also, you need a .env file containing flickr OAuth keys. 
+
 To update dependencies & co:
 - run docpad upgrade && docpad update
 
